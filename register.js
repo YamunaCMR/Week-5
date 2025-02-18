@@ -45,7 +45,8 @@ function validate()
             return false;
         }
    
-     var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+     //var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+      var reg = /^([a-zA-Z][a-zA-Z0-9\.-]+)@([a-zA-Z-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
      var mail=frm.mailid.value;
      localStorage.setItem("email",mail)
 if (reg.test(mail)){
